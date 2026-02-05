@@ -1,12 +1,18 @@
 # =====================================
 # SOC Enrichment Workflow (Version 2)
 # =====================================
+
 # Project Metadata
 project:
   title: "Automating Threat Analysis Using Splunk and n8n"
-  status: currently-working
+  status: in-progress
   phase: development
   domain: Cybersecurity / SOC Automation
+  tools:
+    - Splunk
+    - n8n
+    - VirusTotal
+    - AI Agent (LLM)
 
 # Embedded diagram preview
 img: "<img src='Screenshot-From-2026-02-05-21-23-45.png' alt='n8n SOC enrichment workflow v2 diagram' />"
@@ -15,10 +21,12 @@ workflow:
   name: SOC IOC Enrichment Pipeline v2
   platform: n8n
   description: >
-    This workflow ingests security alerts through either a manual trigger
-    or a webhook, optionally performs a search job, normalizes the results,
-    checks for valid IOCs, enriches them via VirusTotal, and sends the same
-    data to an AI Agent for analyst-level reasoning and explanation.
+    This workflow is part of an active development project focused on
+    automating threat analysis using Splunk and n8n. It ingests security
+    alerts through either a manual trigger or a webhook, optionally performs
+    a search job, normalizes the results, checks for valid IOCs, enriches them
+    via VirusTotal, and sends the same data to an AI Agent for analyst-level
+    reasoning and explanation.
 
   version_changes:
     - IF node now processes multiple items (batch IOC handling)
@@ -45,7 +53,7 @@ nodes:
     type: Webhook (POST)
     purpose: >
       Accepts inbound alerts from external systems such as
-      SIEM, EDR, or Wazuh.
+      Splunk, EDR, or Wazuh.
     output:
       - sends payload directly to IF node
 
