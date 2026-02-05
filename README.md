@@ -15,7 +15,7 @@ project:
     - AI Agent (LLM)
 
 # Embedded diagram preview
-img: "<img src='Screenshot-From-2026-02-05-21-23-45.png' alt='n8n SOC enrichment workflow v2 diagram' />"
+img: "<img src='n8n.png' />"
 
 workflow:
   name: SOC IOC Enrichment Pipeline v2
