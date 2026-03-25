@@ -216,4 +216,4 @@ notes:
   - AI Agent runs in parallel and does not yet merge back into VT results.
   - A Merge node could combine VirusTotal enrichment and AI analysis.
   - IF node false branch is currently unused.
-  - Final output appears to be VirusTotal formatted reports only.
+  - Final output appears to be VirusTotal formatted reports only
